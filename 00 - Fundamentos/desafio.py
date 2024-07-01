@@ -1,14 +1,14 @@
 menu = """
 
-[d] Depositar
-[s] Sacar
-[e] Extrato
-[q] Sair
+[1] Depositar
+[2] Sacar
+[3] Extrato
+[4] Sair
 
 => """
 
 saldo = 0
-limite = 500
+limite = 6000
 extrato = ""
 numero_saques = 0
 LIMITE_SAQUES = 3
@@ -37,7 +37,7 @@ while True:
         excedeu_saques = numero_saques >= LIMITE_SAQUES
 
         if excedeu_saldo:
-            print("Operação falhou! Você não tem saldo suficiente.")
+            print("Operação falhou! Você etá Duro!!.")
 
         elif excedeu_limite:
             print("Operação falhou! O valor do saque excede o limite.")
